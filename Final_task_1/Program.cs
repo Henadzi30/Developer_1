@@ -14,6 +14,7 @@ string[] array1 = { "Hello", "2", "world", ":-)" };
 string[] array2 = { "1234", "1567", "-2", "computer science" };
 string[] array3 = { "Russia", "Denmark", "Kazan" };
 
+// Set the method for creating the desired array
 string[] GetNeedArray(string[] array)
 {
     int arrayLength = array.Length;
@@ -28,6 +29,7 @@ string[] GetNeedArray(string[] array)
             elements++;
         }
     }
+    // We form the desired array
     string[] desiredArray = new string[elements];
     for (int i = 0; i < elements; i++)
     {
@@ -35,6 +37,7 @@ string[] GetNeedArray(string[] array)
     }
     return desiredArray;
 }
+// Method for outputting the desired array to the console
 void PrintArray(string[] array)
 {
     if (array.Length == 0)
@@ -46,6 +49,7 @@ void PrintArray(string[] array)
         Console.Write($"['{string.Join("', '", array)}']");
     }
 }
+// Processing output to the console
 void ResultTextProcessingMethod(string[] array)
 {
     string[] myArray = GetNeedArray(array);
@@ -54,6 +58,7 @@ void ResultTextProcessingMethod(string[] array)
     PrintArray(myArray);
     Console.WriteLine();
 }
+// Task solution activation
 ResultTextProcessingMethod(array1);
 ResultTextProcessingMethod(array2);
 ResultTextProcessingMethod(array3);
