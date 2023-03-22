@@ -46,3 +46,11 @@ void PrintArray(string[] array)
         Console.Write($"['{string.Join("', '", array)}']");
     }
 }
+void ResultTextProcessingMethod(string[] array)
+{
+    string[] myArray = GetNeedArray(array);
+    PrintArray(array);
+    Console.Write($"  =>  ");
+    PrintArray(myArray);
+    Console.WriteLine();
+}
