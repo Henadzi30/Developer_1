@@ -35,4 +35,14 @@ string[] GetNeedArray(string[] array)
     }
     return desiredArray;
 }
-
+void PrintArray(string[] array)
+{
+    if (array.Length == 0)
+    {
+        Console.Write("[]");
+    }
+    else
+    {
+        Console.Write($"['{string.Join("', '", array)}']");
+    }
+}
