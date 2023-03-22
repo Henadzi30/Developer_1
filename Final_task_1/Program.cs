@@ -54,3 +54,6 @@ void ResultTextProcessingMethod(string[] array)
     PrintArray(myArray);
     Console.WriteLine();
 }
+ResultTextProcessingMethod(array1);
+ResultTextProcessingMethod(array2);
+ResultTextProcessingMethod(array3);
