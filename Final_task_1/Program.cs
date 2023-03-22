@@ -14,4 +14,25 @@ string[] array1 = { "Hello", "2", "world", ":-)" };
 string[] array2 = { "1234", "1567", "-2", "computer science" };
 string[] array3 = { "Russia", "Denmark", "Kazan" };
 
+string[] GetNeedArray(string[] array)
+{
+    int arrayLength = array.Length;
+    string[] needArray = new string[arrayLength];
+    int elements = 0;
+
+    for (int i = 0; i < arrayLength; i++)
+    {
+        if (array[i].Length <= desiredElementLength)
+        {
+            needArray[elements] = array[i];
+            elements++;
+        }
+    }
+    string[] desiredArray = new string[elements];
+    for (int i = 0; i < elements; i++)
+    {
+        desiredArray[i] = needArray[i];
+    }
+    return desiredArray;
+}
 
